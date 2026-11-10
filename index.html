@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TP HTML form</title>
 </head>
+
 <body>
-    
+    <h1>TP HTML form du 10/11/26</h1>
+    <form action="/traitement" method="POST" enctype="multipart/form-data">
+        <fieldset>
+            <legend>Indentité & Sécurité</legend>
+            <label for="lastname">Nom</label>
+            <input type="text" name="lastname" id="lastname" required placeholder="DUPONT">
+            <label for="firstname">Prénom</label>
+            <input type="text" name="firstname" id="lastname required" placeholder="Nathan" autofocus>
+            <label for="mdp">Mot de passe</label>
+            <input type="password" name="mdp" id="mdp">
+            <label for="photo">Photo de profil</label>
+            <input type="file" name="photo" id="photo" accept=".png, .PNG, .jpg, .JPG">
+        </fieldset>
+        <fieldset>
+            <legend>Contact & Profil</legend>
+            <label for="email">Email pro</label>
+            <input type="email" name="email" id="email" required>
+            <label for="tel">Téléphone</label>
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{10}">
+            <label for="site">Site Web / Portfolio</label>
+            <input type="url" name="site" id="site">
+            <label for="template">Couleur du thème</label>
+            <input type="color" name="template" id="template" value="#808080">
+        </fieldset>
+        <fieldset>
+            <legend>Information Professionnelles</legend>
+            <label for="exp">Années d'expérience</label>
+            <input type="number" name="exp" id="exp" min="0" max="50">
+            <label for="tjm">Taux Journalier Moyen (TJM)</label>
+            <input type="number" name="tjm" id="tjm" step="50" min="0">
+            <label for="seniorlvl">Niveau de séniorité estimé</label>
+            <input type="range" name="seniorlvl" id="seniorlvl" min="1" max="5">
+            <label for="techno">CSS</label>
+            <input type="checkbox" name="techno" id="techno"checkbox>
+            <label for="techno">HTML</label>
+            <input type="checkbox" name="techno" id="techno" checked>
+            <label for="techno">Javascript</label>
+            <input type="checkbox" name="techno" id="techno">
+            <label for="techno">PHP</label>
+            <input type="checkbox" name="techno" id="techno">
+            <label for="techno">Python</label>
+            <input type="checkbox" name="techno" id="techno">
+            <label for="techno">JAVA</label>
+            <input type="checkbox" name="techno" id="techno">
+            <label for="status">Auto-entrepreneur</label>
+            <input type="radio" name="status" id="status">
+            <label for="status">SASU</label>
+            <input type="radio" name="status" id="status">
+            <label for="status">EURL</label>
+            <input type="radio" name="status" id="status">
+            <label for="loc">Région d'intervention</label>
+            <select name="localisation" id="loc">Région d'intervention
+            <optgroup label="Nord">
+            <option value="IDF">Ile-de-France</option>
+            <option value="Lille">Lille</option>
+            </optgroup>
+            <optgroup label="centre">Centre</optgroup>
+            <option value="ORL">Orléans</option>
+            <option value="Tours">Tours</option>
+            <option value="Tigy">Tigy</option>
+            <option value="Chinon">Chinon</option>
+            <optgroup label="sud">Sud</optgroup>
+            <option value="Marseille">Marseille</option>
+            <option value="Nice">Nice</option>
+            <option value="bordeaux">Bordeaux</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Disponibilités & Finalisation</legend>
+            <label for="freedate">Date de disponibilité</label>
+            <input type="date" name="freedate" id="freedate" required>
+            <label for="lastaudit">Dernier audit technique</label>
+            <input type="text" name="lastaudit" id="lastaudit" value="Non réalisé" readonly>
+            <label for="motivation">Motivation</label>
+            <textarea name="motivation" id="motivation" rows="8" maxlength="500" placeholder="vos motivations en moins de 500 caractères"></textarea>
+            <label for="cgu">J'accepte les Conditions générales d'utilisation (CGU)</label>
+            <input type="checkbox" name="cgu" id="cgu" required>
+            <button type="submit">Valider</button>
+            <button type="reset">Effacer</button>
+        </fieldset>
+    </form>
+
 </body>
+
 </html>
