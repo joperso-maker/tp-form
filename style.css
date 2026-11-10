@@ -1,30 +1,126 @@
 
+body {
+    margin: 0;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f8;
+    color: #222;
+}
 h1 {
     text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
 }
 form {
-    width: 600px;
+    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 25px;
     align-items: center;
     justify-items: center;
+    box-sizing: border-box;
 
 }
 fieldset {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
-    width: max-content;
-    gap: 10px;
+    gap: 16px;
+    padding: 24px;
+    background-color: white;
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 0 0 1px #ddd;
+}
+legend {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 0;
+    margin-bottom: 24px;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
+input, 
+select,
+textarea {
+    max-width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"],
+input[type="url"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+
+    padding: 10px 12px;
+
+    font: inherit;
+
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #4f46e5;
+    outline-offset: 2px;
+    border-color: #4f46e5;
+}
+label {
+    font-size: 0,90rem;
+    font-weight: 500;
+}
+form > div {
+    grid-column: 1 /-1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+button {
+    padding: 8px 15px;
+    font: inherit;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button[type="submit"] {
+    background-color: #4f46e5;
+    color: white;
+    border: 1px solid #4f46e5;
+}
+button[type="submit"] {
+    background-color: #4f46e5;
+    color: white;
+    border: 1px solid #4f46e5;
+}
 @media (max-width: 700px) {
+    body {
+        padding: 20px 12px;
+    }
     form {
+        width: 100%;
+        max-width: 100%;
         grid-template-columns: 1fr;
-        align-items: center;
+    }
+    fieldset {
+        grid-template-columns: 1fr;
+        width:max-content;
     }
 
 }
