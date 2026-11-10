@@ -25,16 +25,17 @@
         <fieldset>
             <legend>Contact & Profil</legend>
             <label for="email">Email pro</label>
-            <input type="email" name="email" id="email" required>
+            <input type="email" name="email" id="email" required placeholder="nom@exemple.fr">
             <label for="tel">Téléphone</label>
-            <input type="tel" name="tel" id="tel" pattern="[0-9]{10}">
+            <input type="tel" name="tel" id="tel" pattern="[0-9]{10}" placeholder="0600000000">
             <label for="site">Site Web / Portfolio</label>
-            <input type="url" name="site" id="site">
+            <input type="url" name="site" id="site" placeholder="www.monsite.fr">
             <label for="template">Couleur du thème</label>
             <input type="color" name="template" id="template" value="#808080">
         </fieldset>
         <fieldset>
             <legend>Information Professionnelles</legend>
+
             <label for="exp">Années d'expérience</label>
             <input type="number" name="exp" id="exp" min="0" max="50">
             <label for="tjm">Taux Journalier Moyen (TJM)</label>
@@ -88,9 +89,11 @@
             <textarea name="motivation" id="motivation" rows="8" maxlength="500" placeholder="vos motivations en moins de 500 caractères"></textarea>
             <label for="cgu">J'accepte les Conditions générales d'utilisation (CGU)</label>
             <input type="checkbox" name="cgu" id="cgu" required>
-            <button type="submit">Valider</button>
-            <button type="reset">Effacer</button>
         </fieldset>
+        <div>
+        <button type="submit">Valider</button>
+        <button type="reset">Effacer</button>
+        </div>
     </form>
 
 </body>
