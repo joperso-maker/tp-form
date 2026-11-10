@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>TP HTML form</title>
 </head>
 
@@ -15,7 +16,7 @@
             <label for="lastname">Nom</label>
             <input type="text" name="lastname" id="lastname" required placeholder="DUPONT">
             <label for="firstname">Prénom</label>
-            <input type="text" name="firstname" id="lastname required" placeholder="Nathan" autofocus>
+            <input type="text" name="firstname" id="firstname" required placeholder="Nathan" autofocus>
             <label for="mdp">Mot de passe</label>
             <input type="password" name="mdp" id="mdp">
             <label for="photo">Photo de profil</label>
@@ -40,39 +41,41 @@
             <input type="number" name="tjm" id="tjm" step="50" min="0">
             <label for="seniorlvl">Niveau de séniorité estimé</label>
             <input type="range" name="seniorlvl" id="seniorlvl" min="1" max="5">
-            <label for="techno">CSS</label>
-            <input type="checkbox" name="techno" id="techno"checkbox>
-            <label for="techno">HTML</label>
-            <input type="checkbox" name="techno" id="techno" checked>
-            <label for="techno">Javascript</label>
-            <input type="checkbox" name="techno" id="techno">
-            <label for="techno">PHP</label>
-            <input type="checkbox" name="techno" id="techno">
-            <label for="techno">Python</label>
-            <input type="checkbox" name="techno" id="techno">
+            <label for="css">CSS</label>
+            <input type="checkbox" name="techno" id="css" checked>
+            <label for="html">HTML</label>
+            <input type="checkbox" name="techno" id="html" checked>
+            <label for="js">Javascript</label>
+            <input type="checkbox" name="techno" id="js">
+            <label for="php">PHP</label>
+            <input type="checkbox" name="techno" id="php">
+            <label for="python">Python</label>
+            <input type="checkbox" name="techno" id="python">
             <label for="techno">JAVA</label>
             <input type="checkbox" name="techno" id="techno">
-            <label for="status">Auto-entrepreneur</label>
-            <input type="radio" name="status" id="status">
-            <label for="status">SASU</label>
-            <input type="radio" name="status" id="status">
-            <label for="status">EURL</label>
-            <input type="radio" name="status" id="status">
+            <label for="AE">Auto-entrepreneur</label>
+            <input type="radio" name="status" id="AE">
+            <label for="SASU">SASU</label>
+            <input type="radio" name="status" id="SASU">
+            <label for="EURL">EURL</label>
+            <input type="radio" name="status" id="EURL">
             <label for="loc">Région d'intervention</label>
-            <select name="localisation" id="loc">Région d'intervention
+            <select name="localisation" id="loc">
             <optgroup label="Nord">
             <option value="IDF">Ile-de-France</option>
             <option value="Lille">Lille</option>
             </optgroup>
-            <optgroup label="centre">Centre</optgroup>
+            <optgroup label="centre">
             <option value="ORL">Orléans</option>
             <option value="Tours">Tours</option>
             <option value="Tigy">Tigy</option>
             <option value="Chinon">Chinon</option>
-            <optgroup label="sud">Sud</optgroup>
+            </optgroup>
+            <optgroup label="sud">
             <option value="Marseille">Marseille</option>
             <option value="Nice">Nice</option>
             <option value="bordeaux">Bordeaux</option>
+            </optgroup>
             </select>
         </fieldset>
         <fieldset>
